@@ -23,7 +23,7 @@ public class Correo {
     }
     
     public void establecerCorreo(){
-        correo = String.format("%s@%s", obtenerUserName(), 
+            correo = String.format("%s@%s", obtenerUserName(),
                 obtenerDominio().obtenerDominio());
     }
     

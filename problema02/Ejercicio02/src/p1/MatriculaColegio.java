@@ -21,4 +21,11 @@ public class MatriculaColegio {
     public double obtenerTarifa(){
         return tarifa;
     }
+
+    @Override
+    public String toString() {
+        String cadena = String.format("Matricula Colegio: \n" +
+                "tarifa: \n%.2f",tarifa);
+        return cadena;
+    }
 }
