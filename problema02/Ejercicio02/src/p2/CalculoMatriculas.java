@@ -1,6 +1,7 @@
 package p2;
 
-public class CalculoMatriculas {
+public abstract class CalculoMatriculas {
 
-
+    public abstract void extablecerTarifa();
+    public abstract double obtenerTarifa();
 }

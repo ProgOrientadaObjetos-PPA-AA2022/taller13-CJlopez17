@@ -5,19 +5,25 @@
  */
 package p1;
 
+import p2.CalculoMatriculas;
+import p2.TipoMatricula;
+
+import java.util.Timer;
+
 /**
  *
  * @author reroes
  */
-public class MatriculaJardin {
+public class MatriculaJardin extends CalculoMatriculas {
     private double tarifa;
     
-        
+        @Override
     public void establecerTarifa(){
         // tarifa = costo desayunos + costo libros + costo paseos
         tarifa = 50.2 + 140.2 + 40;
     }
-        
+
+    @Override
     public double obtenerTarifa(){
         return tarifa;
     }
